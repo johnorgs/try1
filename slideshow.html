@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style type="text/css">
+    body {
+  background: #4f4e56;
+}
+
+.box1 {
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.circl1, .circl2, .circl3, .circl4, .circl5 {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 270px;
+  cursor: pointer;
+  border: 1px  solid #fff;
+  opacity: .8;
+}
+
+.circl1 {
+   left: 710px;
+}
+
+.circl2 {
+  left: 750px;
+}
+
+.circl3 {
+  left: 790px;
+}
+
+.circl4 {
+  left: 830px;
+}
+
+.circl5 {
+  left: 870px;
+}
+
+.help1, .help2, .help3, .help4, .help5 {
+  position: absolute;
+  background: rgba(0,0,0,.9);
+  color: #fff;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  font-family: "Open Sans";
+  top: 300px;
+  transition: all .4s;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background-size: 100%;
+}
+
+.img1 {
+  background: url(http://cdn01.wallconvert.com/_media/wallpapers_1366x768/1/1/beautiful-girl-4044.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.img2 {
+  background: url(http://cs1262.vkontakte.ru/u3142136/13610798/x_d1d1c90e.jpg);
+  background-size: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-position: 0px -22px;
+}
+
+.img3 {
+  background: url(http://cdn.fishki.net/upload/ftp/posts/photo2/1left.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-size: 100%;
+  background-position: 0;
+}
+
+.img4 {
+  background: url(http://wpmedia.o.canada.com/2013/07/simonnessman.jpg?w=615);
+  background-repeat: none;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.img5 {
+  background: url(http://www.30q.ru/uploads/photos/150725200902171.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-size: 100%;
+}
+  </style>
+</head>
+<body>
+  <div class="box1">
+  <div class="img1"></div>
+  <div class="help1">Stefan Rass'k Jo</div>
+  
+  <div class="img2"></div>
+  <div class="help2">Mike Nollan</div>
+  
+  <div class="img3"></div>
+  <div class="help3">Sheer Grill</div>
+  
+  <div class="img4"></div>
+  <div class="help4">Millian Kik</div>
+  
+  <div class="img5"></div>
+  <div class="help5">Joui Hex</div>
+  
+  <div class="circl1" id="c1"></div>
+  <div class="circl2"></div>
+  <div class="circl3"></div>
+  <div class="circl4"></div>
+  <div class="circl5"></div>
+  
+ </div>
+ <script type="text/javascript">
+   $('.img2').hide(0);
+$('.img3').hide(0);
+$('.img4').hide(0);
+$('.img5').hide(0);
+$('.help1').offset({top:200});
+$('.circl1').css({"background": '#fff'})
+$('.help2').hide(0);
+$('.help3').hide(0);
+$('.help4').hide(0);
+$('.help5').hide(0);
+$('body').css({"background": 'white'})
+
+$('.circl1').click(function(){
+  $('.img1').fadeIn(300);
+  $('.help1').fadeIn(300);
+  $('.help1').offset({top:200});
+  $('.img2').hide(0);
+  $('.help2').offset({top:540});
+  $('.img3').hide(0);
+  $('.help3').offset({top:540});
+  $('.img4').hide(0);
+  $('.help4').offset({top:540});
+  $('.img5').hide(0);
+  $('.help5').offset({top:540});
+  $('.circl1').css({"background": '#fff'})
+  $('.circl2').css({"background": 'black'})
+  $('.circl3').css({"background": 'black'})
+  $('.circl4').css({"background": 'black'})
+  $('.circl5').css({"background": 'black'})
+  $('body').css({"background": 'white'})
+});
+
+
+$('.circl2').click(function(){
+  $('.img2').fadeIn(300);
+  $('.help2').fadeIn(300);
+  $('.help2').offset({top:200});
+  $('.img1').hide(0);
+  $('.help1').offset({top:540});
+  $('.img3').hide(0);
+  $('.help3').offset({top:540});
+  $('.img4').hide(0);
+  $('.help4').offset({top:540});
+  $('.img5').hide(0);
+  $('.help5').offset({top:540});
+  $('.circl1').css({"background": 'black'})
+  $('.circl2').css({"background": '#fff'})
+  $('.circl3').css({"background": 'black'})
+  $('.circl4').css({"background": 'black'})
+  $('.circl5').css({"background": 'black'})
+  $('body').css({"background": 'white'})
+});
+
+$('.circl3').click(function(){
+  $('.img3').fadeIn(300);
+  $('.help3').fadeIn(300);
+  $('.help3').offset({top:200});
+  $('.img1').hide(0);
+  $('.help1').offset({top:540});
+  $('.img2').hide(0);
+  $('.help2').offset({top:540});
+  $('.img4').hide(0);
+  $('.help4').offset({top:540});
+  $('.img5').hide(0);
+  $('.help5').offset({top:540});
+  $('.circl1').css({"background": 'black'})
+  $('.circl2').css({"background": 'black'})
+  $('.circl3').css({"background": '#fff'})
+  $('.circl4').css({"background": 'black'})
+  $('.circl5').css({"background": 'black'})
+  $('body').css({"background": 'white'})
+});
+
+$('.circl4').click(function(){
+  $('.img4').fadeIn(300);
+  $('.help4').fadeIn(300);
+  $('.help4').offset({top:200});
+  $('.img1').hide(0);
+  $('.help1').offset({top:540});
+  $('.img3').hide(0);
+  $('.help3').offset({top:540});
+  $('.img2').hide(0);
+  $('.help2').offset({top:540});
+  $('.img5').hide(0);
+  $('.help5').offset({top:540});
+  $('.circl1').css({"background": 'black'})
+  $('.circl2').css({"background": 'black'})
+  $('.circl3').css({"background": 'black'})
+  $('.circl4').css({"background": '#fff'})
+  $('.circl5').css({"background": 'black'})
+  $('body').css({"background": 'white'})
+});
+
+$('.circl5').click(function(){
+  $('.img5').fadeIn(300);
+  $('.help5').fadeIn(300);
+  $('.help5').offset({top:200});
+  $('.img1').hide(0);
+  $('.help1').offset({top:540});
+  $('.img3').hide(0);
+  $('.help3').offset({top:540});
+  $('.img4').hide(0);
+  $('.help4').offset({top:540});
+  $('.img2').hide(0);
+  $('.help2').offset({top:540});
+  $('.circl1').css({"background": 'black'})
+  $('.circl2').css({"background": 'black'})
+  $('.circl3').css({"background": 'black'})
+  $('.circl4').css({"background": 'black'})
+  $('.circl5').css({"background": '#fff'})
+  $('body').css({"background": 'white'})
+});
+ </script>
+</body>
+</html>
